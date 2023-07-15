@@ -1,14 +1,14 @@
 data "google_compute_subnetwork" "subnet" {
-    project = "<< gcp-project >>"
-  name   = "default"
-  region = "europe-west1"
+  project = "<< gcp-project >>"
+  name    = "default"
+  region  = "europe-west1"
 }
 
 module "simple-vm-example" {
-  source     = "github.com/GoogleCloudPlatform/cloud-foundation-fabric/modules/compute-vm"
-  project_id = "<< gcp-project >>"
-  zone       = "europe-west1-b"
-  name       = "test"
+  source        = "github.com/GoogleCloudPlatform/cloud-foundation-fabric/modules/compute-vm"
+  project_id    = "<< gcp-project >>"
+  zone          = "europe-west1-b"
+  name          = "test"
   instance_type = "n2-standard-2"
   network_interfaces = [{
     network    = "default"
