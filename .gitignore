@@ -1,2 +1,2 @@
-*terraform.tfstate*
-\.terraform
+using-module/terraform.tfstate.*
+./\.*
