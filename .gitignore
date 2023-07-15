@@ -2,3 +2,6 @@ using-module/terraform.tfstate.backup
 using-module/terraform.tfstate
 .terraform.lock.hcl
 *.terraform/
+using-resources/terraform.tfstate
+using-resources/terraform.tfstate.backup
+using-resources/.terraform.tfstate.lock.info
