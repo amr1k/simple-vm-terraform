@@ -1,2 +1,1 @@
-./using-module/terraform.tfstate
-./using-module/terraform.tfstate.backup
+using-module/terraform.tfstate*
