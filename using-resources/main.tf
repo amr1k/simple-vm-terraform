@@ -1,5 +1,5 @@
 resource "google_service_account" "default" {
-  project      = "amriksingh-testing"
+  project      = "<< gcp-project >>"
   account_id   = "test-vm"
   display_name = "Test VM Service Account"
 }
@@ -8,7 +8,7 @@ resource "google_compute_instance" "default" {
   name         = "test"
   machine_type = "e2-medium"
   zone         = "europe-west1-b"
-  project      = "amriksingh-testing"
+  project      = "<< gcp-project >>"
 
 
   boot_disk {

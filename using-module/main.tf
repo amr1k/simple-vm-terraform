@@ -10,12 +10,15 @@ module "simple-vm-example" {
   zone          = "europe-west1-b"
   name          = "test"
   instance_type = "n2-standard-2"
+
   network_interfaces = [{
     network    = "default"
     subnetwork = data.google_compute_subnetwork.subnet.self_link
     nat        = true #Enable public ip
   }]
+
   service_account_create = true
+
   boot_disk = {
     initialize_params = {
       image = "projects/ubuntu-os-cloud/global/images/family/ubuntu-2304-amd64"
