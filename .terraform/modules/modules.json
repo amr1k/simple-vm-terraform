@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"simple-vm-example","Source":"git::https://github.com/GoogleCloudPlatform/cloud-foundation-fabric.git//modules/compute-vm","Dir":".terraform/modules/simple-vm-example/modules/compute-vm"}]}
